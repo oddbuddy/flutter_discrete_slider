@@ -313,6 +313,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-If you like this package, please give it a ⭐ on [GitHub](https://github.com/oddbuddy/discrete_slider) and a 👍 on [pub.dev](https://pub.dev/packages/discrete_slider)!
+If you like this package, please give it a ⭐ on [GitHub](https://github.com/oddbuddy/flutter_discrete_slider) and a 👍 on [pub.dev](https://pub.dev/packages/discrete_slider)!
 
-For issues and feature requests, please visit our [GitHub Issues](https://github.com/oddbuddy/discrete_slider/issues) page.
+For issues and feature requests, please visit our [GitHub Issues](https://github.com/oddbuddy/flutter_discrete_slider/issues) page.
