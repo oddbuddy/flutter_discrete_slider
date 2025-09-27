@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class StepSliderPainter extends CustomPainter {
+class DiscreteSliderPainter extends CustomPainter {
   final int steps;
   final int currentStep;
   final List<String>? labels;
@@ -13,7 +13,7 @@ class StepSliderPainter extends CustomPainter {
   final double? labelBorderRadius;
   final double? trackWidth;
 
-  StepSliderPainter({
+  DiscreteSliderPainter({
     required this.steps,
     required this.currentStep,
     this.labels,

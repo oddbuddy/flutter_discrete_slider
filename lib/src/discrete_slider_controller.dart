@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class StepSliderController extends ChangeNotifier {
+class DiscreteSliderController extends ChangeNotifier {
   int _currentStep = 0;
 
   int get currentStep => _currentStep;

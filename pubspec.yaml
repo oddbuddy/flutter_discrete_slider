@@ -1,8 +1,8 @@
-name: step_slider
-description: "A new Flutter package project."
+name: discrete_slider
+description: "Flutter discrete slider package project."
 version: 1.0.0
 
-homepage: https://github.com/oddbuddy/labeled_slider
+homepage: https://github.com/oddbuddy/flutter_discrete_slider
 
 environment:
   sdk: ^3.9.2

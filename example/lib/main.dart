@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:step_slider/step_slider.dart';
+import 'package:discrete_slider/discrete_slider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,8 +30,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  StepSliderController _controller = StepSliderController();
-  StepSliderController _sliderController = StepSliderController();
+  DiscreteSliderController _controller = DiscreteSliderController();
+  DiscreteSliderController _sliderController = DiscreteSliderController();
 
   @override
   void dispose() {
@@ -54,17 +54,18 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           children: <Widget>[
+            SizedBox(height: 100),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: StepSlider(
+              padding: const EdgeInsets.symmetric(horizontal: 30),
+              child: DiscreteSlider(
                 steps: 2,
                 labels: ["Low", "Medium", "High"],
                 onChanged: (i) {},
                 labelTextStyle: TextStyle(fontSize: 20),
               ),
             ),
-            SizedBox(height: 30),
-            StepSlider(
+            SizedBox(height: 100),
+            DiscreteSlider(
               controller: _controller,
               steps: 4,
               onChanged: (i) {
@@ -78,21 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
               activeTrackColor: Colors.grey.shade500,
               labelBorderRadius: 18,
             ),
-            SizedBox(height: 30),
-            StepSlider(
-              controller: _sliderController,
-              steps: 6,
-              onChanged: (i) {
-                setState(() {
-                  print(i);
-                });
-              },
-              trackWidth: 10,
-              labelTextStyle: TextStyle(fontSize: 14),
-              inActiveTrackColor: Colors.grey.shade300,
-              activeTrackColor: Colors.blue,
-              labelBorderRadius: 12,
-            ),
+            SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Row(
@@ -100,10 +87,71 @@ class _MyHomePageState extends State<MyHomePage> {
                   Expanded(
                     child: ElevatedButton(
                       onPressed: change,
-                      child: Text("Change"),
+                      child: Text("Change to 2"),
                     ),
                   ),
                 ],
+              ),
+            ),
+            SizedBox(height: 30),
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: DiscreteSlider(
+                controller: _sliderController,
+                steps: 6,
+                onChanged: (i) {
+                  setState(() {
+                    print(i);
+                  });
+                },
+                trackWidth: 10,
+                labelTextStyle: TextStyle(fontSize: 14),
+                inActiveColor: Colors.red.shade300,
+                inActiveTrackColor: Colors.grey.shade300,
+                activeTrackColor: Colors.red,
+                activeColor: Colors.red.shade900,
+                labelBorderRadius: 12,
+              ),
+            ),
+            SizedBox(height: 30),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: DiscreteSlider(
+                steps: 3,
+                labels: ["Off", "Low", "Medium", "High"],
+                onChanged: (level) {
+                  print("Volume level: $level");
+                },
+                trackWidth: 8,
+                height: 40,
+                labelBorderRadius: 20,
+                activeTrackColor: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: DiscreteSlider(
+                controller: _controller,
+                steps: 4,
+                labels: ["Start", "25%", "50%", "75%", "Complete"],
+                onChanged: (_) {}, // Read-only in this case
+                activeTrackColor: Colors.blue,
+                inActiveTrackColor: Colors.grey.shade300,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: DiscreteSlider(
+                steps: 4,
+                labels: ["Poor", "Fair", "Good", "Great", "Excellent"],
+                onChanged: (rating) {
+                  print("Rating: ${rating + 1} stars");
+                },
+                activeTrackColor: Colors.amber,
+                labelTextStyle: TextStyle(
+                  fontSize: 16,
+                  color: Colors.amber.shade700,
+                ),
               ),
             ),
           ],

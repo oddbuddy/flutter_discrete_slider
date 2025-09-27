@@ -1,12 +1,12 @@
-import 'package:step_slider/src/step_slider_painter.dart';
+import 'package:discrete_slider/src/discrete_slider_painter.dart';
 
-import 'step_slider_controller.dart';
+import 'discrete_slider_controller.dart';
 import 'package:flutter/material.dart';
 
-class StepSlider extends StatefulWidget {
+class DiscreteSlider extends StatefulWidget {
   final int steps;
   final ValueChanged<int> onChanged;
-  final StepSliderController? controller;
+  final DiscreteSliderController? controller;
   final List<String>? labels;
   final EdgeInsets? labelPadding;
   final TextStyle? labelTextStyle;
@@ -18,7 +18,7 @@ class StepSlider extends StatefulWidget {
   final double height;
   final double? trackWidth;
 
-  const StepSlider({
+  const DiscreteSlider({
     super.key,
     required this.steps,
     required this.onChanged,
@@ -40,16 +40,16 @@ class StepSlider extends StatefulWidget {
        );
 
   @override
-  State<StepSlider> createState() => StepSliderState();
+  State<DiscreteSlider> createState() => DiscreteSliderState();
 }
 
-class StepSliderState extends State<StepSlider> {
-  late StepSliderController _controller;
+class DiscreteSliderState extends State<DiscreteSlider> {
+  late DiscreteSliderController _controller;
 
   @override
   void initState() {
     super.initState();
-    _controller = widget.controller ?? StepSliderController();
+    _controller = widget.controller ?? DiscreteSliderController();
     _controller.addListener(_handleControllerUpdate);
   }
 
@@ -83,7 +83,7 @@ class StepSliderState extends State<StepSlider> {
         height: widget.height,
         width: double.infinity,
         child: CustomPaint(
-          painter: StepSliderPainter(
+          painter: DiscreteSliderPainter(
             steps: widget.steps,
             currentStep: _controller.currentStep,
             labels: widget.labels,
