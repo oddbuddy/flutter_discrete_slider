@@ -1,11 +1,12 @@
-# DiscreteSlider
+# Discrete Slider
 
-A highly customizable discrete slider widget for Flutter applications. Create beautiful step-based sliders with labels and smooth animations.
+A highly customizable discrete slider (step slider) widget for Flutter applications. Create beautiful step-based sliders with labels and smooth animations.
 
 [![pub package](https://img.shields.io/pub/v/discrete_slider.svg)](https://pub.dev/packages/discrete_slider)
 <!-- [![popularity](https://badges.bar/discrete_slider/popularity)](https://pub.dev/packages/discrete_slider/score)
 [![likes](https://badges.bar/discrete_slider/likes)](https://pub.dev/packages/discrete_slider/score)
 [![pub points](https://badges.bar/discrete_slider/pub%20points)](https://pub.dev/packages/discrete_slider/score) -->
+<img src="./assets/all.png" height="300">
 
 ## Features
 
