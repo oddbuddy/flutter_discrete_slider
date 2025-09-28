@@ -2,7 +2,8 @@
 
 A highly customizable discrete slider (step slider) widget for Flutter applications. Create beautiful step-based sliders with labels and smooth animations.
 
-[![pub package](https://img.shields.io/pub/v/discrete_slider.svg)](https://pub.dev/packages/discrete_slider)
+[![pub package](https://img.shields.io/pub/v/discrete_slider.svg)](https://pub.dev/packages/discrete_slider) <a href="https://buymeacoffee.com/oddbuddy" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" height="20"></a>
+
 <!-- [![popularity](https://badges.bar/discrete_slider/popularity)](https://pub.dev/packages/discrete_slider/score)
 [![likes](https://badges.bar/discrete_slider/likes)](https://pub.dev/packages/discrete_slider/score)
 [![pub points](https://badges.bar/discrete_slider/pub%20points)](https://pub.dev/packages/discrete_slider/score) -->
@@ -314,5 +315,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Support
 
 If you like this package, please give it a ⭐ on [GitHub](https://github.com/oddbuddy/flutter_discrete_slider) and a 👍 on [pub.dev](https://pub.dev/packages/discrete_slider)!
+
+If you'd like to support the development of this package, consider <a href="https://buymeacoffee.com/oddbuddy" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 For issues and feature requests, please visit our [GitHub Issues](https://github.com/oddbuddy/flutter_discrete_slider/issues) page.

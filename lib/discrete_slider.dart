@@ -1,4 +1,4 @@
-library step_slider;
+library discrete_slider;
 
 export 'src/discrete_slider_widget.dart';
 export 'src/discrete_slider_painter.dart';
