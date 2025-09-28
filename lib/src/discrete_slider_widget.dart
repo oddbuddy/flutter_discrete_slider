@@ -3,21 +3,55 @@ import 'package:discrete_slider/src/discrete_slider_painter.dart';
 import 'discrete_slider_controller.dart';
 import 'package:flutter/material.dart';
 
+/// A customizable discrete step-based slider widget.
+///
+/// This widget displays a horizontal slider with [steps] evenly distributed
+/// positions. It supports custom labels, colors, and styles, making it
+/// suitable for ratings, progress indicators, or settings.
 class DiscreteSlider extends StatefulWidget {
+  /// Total number of steps in the slider (must be > 0).
   final int steps;
+
+  /// Called whenever the slider value changes.
   final ValueChanged<int> onChanged;
+
+  /// Optional controller to programmatically change the step.
   final DiscreteSliderController? controller;
+
+  /// Optional labels for each step. Must have [steps] + 1 entries if provided.
   final List<String>? labels;
+
+  /// Padding inside each label.
   final EdgeInsets? labelPadding;
+
+  /// Text style for labels.
   final TextStyle? labelTextStyle;
+
+  /// Track color for inactive portion.
   final Color? inActiveTrackColor;
+
+  /// Track color for active portion.
   final Color? activeTrackColor;
+
+  /// Fill color for the active step.
   final Color? activeColor;
+
+  /// Fill color for inactive steps.
   final Color? inActiveColor;
+
+  /// Border radius for labels or step indicators.
   final double? labelBorderRadius;
+
+  /// Height of the slider widget.
   final double height;
+
+  /// Stroke width of the track.
   final double? trackWidth;
 
+  /// Creates a [DiscreteSlider].
+  ///
+  /// The [steps] parameter must be greater than 0.
+  /// If [labels] is provided, its length must equal [steps] + 1.
   const DiscreteSlider({
     super.key,
     required this.steps,

@@ -1,6 +1,6 @@
 name: discrete_slider
-description: A highly customizable discrete slider widget for Flutter. Create beautiful step-based sliders with custom labels, colors, and smooth animations. Perfect for ratings, settings, progress indicators, and any discrete value selection.
-version: 1.0.2
+description: Step sliders with custom labels, colors and smooth animations — ideal for ratings & progress.
+version: 1.0.5
 
 homepage: https://github.com/oddbuddy/flutter_discrete_slider
 repository: https://github.com/oddbuddy/flutter_discrete_slider
@@ -10,13 +10,9 @@ topics:
   - slider
   - discrete
   - labeled
-  - label
   - step
-  - ui
-  - widget
   - customizable
-  - flutter
-  - material
+
 screenshots:
   - description: 'Basic discrete slider with labels'
     path: assets/settings.png
