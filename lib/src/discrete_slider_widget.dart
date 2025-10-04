@@ -70,7 +70,7 @@ class DiscreteSlider extends StatefulWidget {
   }) : assert(steps > 0, "Steps must be greater than 0"),
        assert(
          labels == null || labels.length == steps + 1,
-         "Labels length must equal steps",
+         "Labels length must equal (steps + 1), if provided",
        );
 
   @override

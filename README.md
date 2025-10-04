@@ -24,7 +24,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  discrete_slider: ^1.0.0
+  discrete_slider: #<latest-version>
 ```
 
 Then run:

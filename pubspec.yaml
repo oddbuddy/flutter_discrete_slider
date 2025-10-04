@@ -1,6 +1,6 @@
 name: discrete_slider
 description: Step sliders with custom labels, colors and smooth animations — ideal for ratings & progress.
-version: 1.0.5
+version: 1.0.6
 
 homepage: https://github.com/oddbuddy/flutter_discrete_slider
 repository: https://github.com/oddbuddy/flutter_discrete_slider
@@ -14,13 +14,13 @@ topics:
   - customizable
 
 screenshots:
-  - description: 'Basic discrete slider with labels'
-    path: assets/settings.png
   - description: 'Customized sliders with different styles'
     path: assets/all.png
+  - description: 'Basic discrete slider with labels'
+    path: assets/settings.png
 
 environment:
-  sdk: ^3.9.2
+  sdk: ">=3.0.0 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
